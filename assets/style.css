@@ -84,15 +84,19 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
 }
-#about-me p {
+.about-me_detail {
 	width: 80%;
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
+/* #gallery {
+	min-height: 100vh;
+} */
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -147,6 +151,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
 
 }
 .quote__author {
@@ -188,6 +193,10 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+
+.price{
+	font-size: 1.5rem
 }
 
 #contact {
@@ -257,6 +266,9 @@ input[type="submit"] {
 	}
 	#about-me h6, #about-me p {
 		width: 100%;
+	}
+	.price{
+		font-size: calc(1.275rem + 0.3vw);
 	}
 }
 
