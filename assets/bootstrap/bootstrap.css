@@ -315,7 +315,9 @@ textarea {
 
 .carousel {
   position: relative;
+  height: 46.18vw;
 }
+
 
 .carousel.pointer-event {
   touch-action: pan-y;
@@ -517,6 +519,7 @@ textarea {
 
 .w-100 {
   width: 100% !important;
+  height: auto;
 }
 
 .my-4 {
