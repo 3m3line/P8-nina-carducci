@@ -487,5 +487,20 @@
     ></script>
     <script src="./assets/maugallery.js?v=1"></script>
     <script src="./assets/scripts.js?v=1"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then((registration) => {
+            console.log("Service Worker enregistré avec succès:", registration);
+          })
+          .catch((error) => {
+            console.log(
+              "Erreur lors de l'enregistrement du Service Worker:",
+              error
+            );
+          });
+      }
+    </script>
   </body>
 </html>
