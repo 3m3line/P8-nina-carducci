@@ -13,9 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+    /></noscript>
   </head>
   <body>
     <header class="top-header">
@@ -31,7 +38,11 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="logo instagram"
+              ><img
+                src="assets/images/instagram.png"
+                alt="logo instagram"
+                width="40'"
+                height="40"
             /></a>
           </li>
         </ul>
@@ -69,21 +80,57 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1900px.webp"
+                srcset="
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1900px.webp 1900w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1440px.webp 1440w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1024px.webp 1024w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_768px.webp   768w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_375px.webp   375w
+                "
+                sizes="(min-width: 1441px) 1900px,
+         (max-width: 1440px) 1440px,
+         (max-width: 1024px) 1024px,
+         (max-width: 768px) 768px,
+         (max-width: 375px) 375px"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
             <div class="carousel-item">
               <img
-                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1900px.webp"
+                srcset="
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1900px.webp 1900w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1440px.webp 1440w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1024px.webp 1024w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_768px.webp   768w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_375px.webp   375w
+                "
+                sizes="(min-width: 1441px) 1900px,
+                       (max-width: 1440px) 1440px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 768px) 768px,
+                       (max-width: 375px) 375px"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
             <div class="carousel-item">
               <img
-                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_1900px.webp"
+                srcset="
+                  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_1900px.webp 1900w,
+                  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_1440px.webp 1440w,
+                  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_1024px.webp 1024w,
+                  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_768px.webp   768w,
+                  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_375px.webp   375w
+                "
+                sizes="(min-width: 1441px) 1900px,
+                       (max-width: 1440px) 1440px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 768px) 768px,
+                       (max-width: 375px) 375px"
                 class="d-block w-100"
                 alt="..."
               />
@@ -114,6 +161,8 @@
           <img
             src="./assets/images/nina.webp"
             alt="photo de présentation de Nina Carducci"
+            width="387"
+            height="385"
           />
         </div>
         <div id="about-me">
@@ -144,55 +193,172 @@
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
-              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
+              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_425px.webp 425w,
+                ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_364px.webp 364w,
+                ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_304px.webp 304w,
+                ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_224px.webp 224w,
+                ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+         (min-width: 1200px) and (max-width: 1399px) 364px,
+         (min-width: 992px) and (max-width: 1199px) 304px,
+         (min-width: 768px) and (max-width: 991px) 224px,
+         (min-width: 576px) and (max-width: 767px) 254px,
+         (max-width: 575px) 425px"
               alt="photo de concert"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
+              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_425px.webp 425w,
+                ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_364px.webp 364w,
+                ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_304px.webp 304w,
+                ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_224px.webp 224w,
+                ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+         (min-width: 1200px) and (max-width: 1399px) 364px,
+         (min-width: 992px) and (max-width: 1199px) 304px,
+         (min-width: 768px) and (max-width: 991px) 224px,
+         (min-width: 576px) and (max-width: 767px) 254px,
+         (max-width: 575px) 425px"
               alt="photo d'entreprise"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
+              src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_425px.webp 425w,
+                ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_364px.webp 364w,
+                ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_304px.webp 304w,
+                ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_224px.webp 224w,
+                ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+         (min-width: 1200px) and (max-width: 1399px) 364px,
+         (min-width: 992px) and (max-width: 1199px) 304px,
+         (min-width: 768px) and (max-width: 991px) 224px,
+         (min-width: 576px) and (max-width: 767px) 254px,
+         (max-width: 575px) 425px"
               alt="photo d'entreprise"
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
-              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
+              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_425px.webp 425w,
+                ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_364px.webp 364w,
+                ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_304px.webp 304w,
+                ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_224px.webp 224w,
+                ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+         (min-width: 1200px) and (max-width: 1399px) 364px,
+         (min-width: 992px) and (max-width: 1199px) 304px,
+         (min-width: 768px) and (max-width: 991px) 224px,
+         (min-width: 576px) and (max-width: 767px) 254px,
+         (max-width: 575px) 425px"
               alt="photo de mariage"
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
-              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
+              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_425px.webp 425w,
+                ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_364px.webp 364w,
+                ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_304px.webp 304w,
+                ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_224px.webp 224w,
+                ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+         (min-width: 1200px) and (max-width: 1399px) 364px,
+         (min-width: 992px) and (max-width: 1199px) 304px,
+         (min-width: 768px) and (max-width: 991px) 224px,
+         (min-width: 576px) and (max-width: 767px) 254px,
+         (max-width: 575px) 425px"
               alt="portrait photo"
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
-              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_425px.webp 425w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_364px.webp 364w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_304px.webp 304w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_224px.webp 224w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+         (min-width: 1200px) and (max-width: 1399px) 364px,
+         (min-width: 992px) and (max-width: 1199px) 304px,
+         (min-width: 768px) and (max-width: 991px) 224px,
+         (min-width: 576px) and (max-width: 767px) 254px,
+         (max-width: 575px) 425px"
               alt="photo de mariage"
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
-              src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
+              src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_425px.webp 425w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_364px.webp 364w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_304px.webp 304w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_224px.webp 224w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+         (min-width: 1200px) and (max-width: 1399px) 364px,
+         (min-width: 992px) and (max-width: 1199px) 304px,
+         (min-width: 768px) and (max-width: 991px) 224px,
+         (min-width: 576px) and (max-width: 767px) 254px,
+         (max-width: 575px) 425px"
               alt="portrait photo"
             />
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
-              src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+              src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_425px.webp 425w,
+                ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_364px.webp 364w,
+                ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_304px.webp 304w,
+                ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_224px.webp 224w,
+                ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+         (min-width: 1200px) and (max-width: 1399px) 364px,
+         (min-width: 992px) and (max-width: 1199px) 304px,
+         (min-width: 768px) and (max-width: 991px) 224px,
+         (min-width: 576px) and (max-width: 767px) 254px,
+         (max-width: 575px) 425px"
               alt="photo de concert"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+              src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_425px.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_425px.webp 425w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_364px.webp 364w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_304px.webp 304w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_224px.webp 224w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_254px.webp 254w
+              "
+              sizes="(min-width: 1400px) 425px,
+            (min-width: 1200px) and (max-width: 1399px) 364px,
+            (min-width: 992px) and (max-width: 1199px) 304px,
+            (min-width: 768px) and (max-width: 991px) 224px,
+            (min-width: 576px) and (max-width: 767px) 254px,
+            (max-width: 575px) 425px"
               alt="photo d'entreprise"
             />
           </div>
@@ -297,6 +463,8 @@
             <img
               src="./assets/images/camera.webp"
               alt="photo d'appareil photo"
+              width="379"
+              height="378"
             />
           </div>
         </div>
