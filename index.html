@@ -39,12 +39,15 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img
+              aria-label="Profil Instagram de Nina Carducci"
+            >
+              <img
                 src="assets/images/instagram.png"
                 alt="logo instagram"
-                width="20'"
+                width="20"
                 height="20"
-            /></a>
+              />
+            </a>
           </li>
         </ul>
       </nav>
@@ -460,18 +463,31 @@
               heures
             </p>
             <form action="#" method="post">
-              <label>Nom</label>
-              <input type="text" name="nom" id="nom" />
-              <label>Email</label>
-              <input type="email" name="email" id="email" />
-              <label>Message</label>
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" aria-label="Nom" />
+
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                aria-label="Adresse email"
+              />
+
+              <label for="message">Message</label>
               <textarea
                 name="message"
                 id="message"
                 cols="30"
                 rows="10"
+                aria-label="Votre message"
               ></textarea>
-              <input type="submit" value="Envoyer" />
+
+              <input
+                type="submit"
+                value="Envoyer"
+                aria-label="Envoyer le formulaire"
+              />
             </form>
           </div>
           <div class="picture right">
