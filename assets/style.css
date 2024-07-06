@@ -280,6 +280,7 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 50%;
+		height:66.13vw;
 	}
 	.picture.left::before {
 		width: 100%;
