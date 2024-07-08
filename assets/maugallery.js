@@ -103,7 +103,15 @@
         console.error(
           `Columns should be defined as numbers or objects. ${typeof columns} is not supported.`
         );
+        return;
       }
+    
+      // Add additional HTML after the img tag
+      element.after(`
+        <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+          <meta itemprop="name" content="Nina Carducci" />
+        </span>
+      `);
     },
     moveItemInRowWrapper(element) {
       element.appendTo(".gallery-items-row");
