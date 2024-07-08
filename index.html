@@ -24,6 +24,44 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
     /></noscript>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Photographer",
+        "image": [
+          "./assets/images/nina-carducci_photographe-bordeaux-387.webp"
+        ],
+        "name": "Nina Carducci",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Nina Carducci"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.846742,
+          "longitude": -0.606547
+        },
+        "url": "https://ninacarducci.github.io/",
+        "telephone": "05 56 67 78 89",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ]
+      }
+      </script>
+    </script>
   </head>
   <body>
     <header
@@ -213,7 +251,7 @@
           </button>
         </div>
       </div>
-      <section id="about" itemscope itemtype="https://schema.org/Person">
+      <section id="about" itemtype="https://schema.org/ProfilePage" itemscope>
         <div
           class="picture left"
           itemscope
@@ -231,7 +269,7 @@
             title="Photo de présentation de votre photographe de bordeaux, Nina Carducci"
             width="27.78vw"
             height="auto"
-            itemprop="image"
+            itemprop="contentUrl"
           />
           <span
             itemprop="creator"
@@ -241,9 +279,9 @@
             <meta itemprop="name" content="Nina Carducci" />
           </span>
         </div>
-        <div id="about-me">
+        <div id="about-me" itemprop="mainEntity" itemtype="https://schema.org/Person" itemscope>
           <h2 class="about-me__title">
-            A propos de moi, photographe à Bordeaux
+            <span itemprop="name">Nina Carducci</span>, photographe à Bordeaux
           </h2>
           <p class="about-me__introduction" itemprop="description">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
@@ -263,28 +301,6 @@
             yeux sur vos photos.
           </p>
         </div>
-        <div class="hidden">
-          <span itemprop="name">Nina Carducci</span>
-          <p
-            itemprop="address"
-            itemscope
-            itemtype="http://schema.org/PostalAddress"
-          >
-            Adresse :
-            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
-            <span itemprop="addressLocality">Bordeaux</span>,
-            <span itemprop="postalCode">33200</span>
-          </p>
-          <p itemprop="telephone">
-            Numéro de téléphone : <span>05 56 67 78 89</span>
-          </p>
-          <p>
-            Heures d'ouverture :
-            <span itemprop="openingHours" content="Mo-Fr 10:00-19:00"
-              >Lundi-Vendredi de 10h à 19h</span
-            >
-          </p>
-        </div>
       </section>
       <section id="gallery">
         <h2 class="title">Mon portfolio de photographe</h2>
@@ -295,7 +311,6 @@
             itemscope
             itemtype="https://schema.org/ImageGallery"
           >
-            <figure itemscope itemtype="https://schema.org/imageObject">
               <img
                 data-gallery-tag="Concert"
                 class="gallery-item"
@@ -324,8 +339,6 @@
               >
                 <meta itemprop="name" content="Nina Carducci" />
               </span>
-            </figure>
-            <figure itemscope itemtype="https://schema.org/imageObject">
               <img
                 data-gallery-tag="Entreprises"
                 class="gallery-item"
@@ -354,8 +367,6 @@
               >
                 <meta itemprop="name" content="Nina Carducci" />
               </span>
-            </figure>
-            <figure itemscope itemtype="https://schema.org/imageObject">
               <img
                 data-gallery-tag="Entreprises"
                 class="gallery-item"
@@ -384,8 +395,6 @@
               >
                 <meta itemprop="name" content="Nina Carducci" />
               </span>
-            </figure>
-            <figure itemscope itemtype="https://schema.org/imageObject">
               <img
                 data-gallery-tag="Mariages"
                 class="gallery-item"
@@ -414,8 +423,6 @@
               >
                 <meta itemprop="name" content="Nina Carducci" />
               </span>
-            </figure>
-            <figure itemscope itemtype="https://schema.org/imageObject">
               <img
                 data-gallery-tag="Portrait"
                 class="gallery-item"
@@ -444,8 +451,6 @@
               >
                 <meta itemprop="name" content="Nina Carducci" />
               </span>
-            </figure>
-            <figure itemscope itemtype="https://schema.org/imageObject">
               <img
                 data-gallery-tag="Mariages"
                 class="gallery-item"
@@ -474,8 +479,6 @@
               >
                 <meta itemprop="name" content="Nina Carducci" />
               </span>
-            </figure>
-            <figure itemscope itemtype="https://schema.org/imageObject">
               <img
                 data-gallery-tag="Portrait"
                 class="gallery-item"
@@ -503,9 +506,7 @@
                 itemscope
               >
                 <meta itemprop="name" content="Nina Carducci" />
-              </span>
-            </figure>
-            <figure itemscope itemtype="https://schema.org/imageObject">
+            </span>
               <img
                 data-gallery-tag="Concert"
                 class="gallery-item"
@@ -533,9 +534,7 @@
                 itemscope
               >
                 <meta itemprop="name" content="Nina Carducci" />
-              </span>
-            </figure>
-            <figure itemscope itemtype="https://schema.org/imageObject">
+          </span>
               <img
                 data-gallery-tag="Entreprises"
                 class="gallery-item"
@@ -564,7 +563,6 @@
               >
                 <meta itemprop="name" content="Nina Carducci" />
               </span>
-            </figure>
           </div>
         </div>
       </section>
