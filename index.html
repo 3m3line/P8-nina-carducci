@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" itemscope itemtype="https://schema.org/WebPage">
   <head>
     <title>Photographe Bordeaux, le portfolio de Nina Carducci</title>
     <meta
@@ -26,8 +26,12 @@
     /></noscript>
   </head>
   <body>
-    <header class="top-header">
-      <h1 class="name">Nina Carducci</h1>
+    <header
+      class="top-header"
+      itemscope
+      itemtype="https://schema.org/Organization"
+    >
+      <h1 itemprop="name" class="name">Nina Carducci</h1>
       <nav class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -40,12 +44,16 @@
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
               aria-label="Profil Instagram de Nina Carducci"
+              itemscope
+              itemtype="https://schema.org/SocialMediaProfile"
+              itemprop="sameAs url"
             >
               <img
                 src="assets/images/instagram-photographe-bordeaux.png"
                 alt="logo instagram"
                 width="20"
                 height="20"
+                itemprop="image"
               />
             </a>
           </li>
@@ -82,7 +90,11 @@
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" width="100%" height="auto">
+            <div
+              class="carousel-item active"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
               <img
                 src="./assets/images/slider/photo-corporate-salarie-en-exterieur_1440px.webp"
                 srcset="
@@ -101,10 +113,27 @@
                        (max-width: 320px) 320px"
                 class="d-block w-100"
                 alt="Photographe Bordeaux _ Photo corporate d'un salarié en costume"
-                title="Image du slider :photo corporate d'un salarié en costume prise par votre photographe de Bordeaux _ "
+                title="Image du slider :photo corporate d'un salarié en costume prise par votre photographe de Bordeaux"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="url"
+                content="./assets/images/slider/photo-corporate-salarie-en-exterieur_1440px.webp"
+              />
+              <meta
+                itemprop="name"
+                content="Photographe Bordeaux _ Photo corporate d'un salarié en costume"
+              />
+              <meta
+                itemprop="description"
+                content="Photo corporate d'un salarié en costume prise par votre photographe de Bordeaux"
               />
             </div>
-            <div class="carousel-item">
+            <div
+              class="carousel-item"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
               <img
                 src="./assets/images/slider/photo-concert-foule_1440px.webp"
                 srcset="
@@ -124,10 +153,26 @@
                 class="d-block w-100"
                 alt="Photographe à Bordeaux - Foule lors d'un concert"
                 title="Image du slider : foule lors d'un concert prise par votre photographe de concert"
-                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="url"
+                content="./assets/images/slider/photo-concert-foule_1440px.webp"
+              />
+              <meta
+                itemprop="name"
+                content="Photographe à Bordeaux - Foule lors d'un concert"
+              />
+              <meta
+                itemprop="description"
+                content="Foule lors d'un concert prise par votre photographe de concert"
               />
             </div>
-            <div class="carousel-item">
+            <div
+              class="carousel-item"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
               <img
                 src="./assets/images/slider/photo-mariage-bordeaux-etreinte_1440px.webp"
                 srcset="
@@ -147,7 +192,19 @@
                 class="d-block w-100"
                 alt="photographe mariage bordeaux - Étreinte des deux mariés"
                 title="Image du slider : étreinte des deux mariés par votre photographe mariage"
-                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="url"
+                content="./assets/images/slider/photo-mariage-bordeaux-etreinte_1440px.webp"
+              />
+              <meta
+                itemprop="name"
+                content="Photographe mariage bordeaux - Étreinte des deux mariés"
+              />
+              <meta
+                itemprop="description"
+                content="Étreinte des deux mariés par votre photographe mariage"
               />
             </div>
           </div>
@@ -171,8 +228,12 @@
           </button>
         </div>
       </div>
-      <section id="about">
-        <div class="picture left">
+      <section id="about" itemscope itemtype="https://schema.org/Person">
+        <div
+          class="picture left"
+          itemscope
+          itemtype="https://schema.org/ImageObject"
+        >
           <img
             src="./assets/images/nina-carducci_photographe-bordeaux-387.webp"
             srcset="
@@ -185,13 +246,22 @@
             title="Photo de présentation de votre photographe de bordeaux, Nina Carducci"
             width="27.78vw"
             height="auto"
+            itemprop="image"
+          />
+          <meta
+            itemprop="url"
+            content="./assets/images/nina-carducci_photographe-bordeaux-387.webp"
+          />
+          <meta
+            itemprop="description"
+            content="Photo de profil de Nina Carducci, photographe à Bordeaux"
           />
         </div>
         <div id="about-me">
           <h2 class="about-me__title">
             A propos de moi, photographe à Bordeaux
           </h2>
-          <p class="about-me__introduction">
+          <p class="about-me__introduction" itemprop="description">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestiné. Saisir un moment, une émotion, une situation, un
             endroit, une lumière et les rendre immortels, voilà ce qui me fait
@@ -209,11 +279,38 @@
             yeux sur vos photos.
           </p>
         </div>
+        <div class="hidden">
+          <span itemprop="name">Nina Carducci</span>
+          <p
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            Adresse :
+            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+            <span itemprop="addressLocality">Bordeaux</span>,
+            <span itemprop="postalCode">33200</span>
+          </p>
+          <p itemprop="telephone">
+            Numéro de téléphone : <span>05 56 67 78 89</span>
+          </p>
+          <p>
+            Heures d'ouverture :
+            <span itemprop="openingHours" content="Mo-Fr 10:00-19:00"
+              >Lundi-Vendredi de 10h à 19h</span
+            >
+          </p>
+        </div>
       </section>
       <section id="gallery">
         <h2 class="title">Mon portfolio de photographe</h2>
         <div class="container py-3">
-          <div class="gallery" style="display: none">
+          <div
+            class="gallery"
+            style="display: none"
+            itemscope
+            itemtype="https://schema.org/ImageGallery"
+          >
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
@@ -233,6 +330,15 @@
          (max-width: 575px) 425px"
               alt="Photo d'un photographe professionnel bordeaux de la lumière d'un concert"
               title="Vue d'un concert par votre photographe professionnel"
+              itemprop="image"
+            />
+            <meta
+              itemprop="name"
+              content="Vue d'un concert par votre photographe professionnel"
+            />
+            <meta
+              itemprop="description"
+              content="Photo d'un photographe professionnel de Bordeaux capturant la lumière d'un concert"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -253,6 +359,15 @@
          (max-width: 575px) 425px"
               alt="Photo du CEO prise par votre photographe professionnel bordeaux"
               title="Photo portrait du CEO par votre photographe corporate à Bordeaux"
+              itemprop="image"
+            />
+            <meta
+              itemprop="name"
+              content="Photo portrait du CEO par votre photographe corporate à Bordeaux"
+            />
+            <meta
+              itemprop="description"
+              content="Photo du CEO prise par votre photographe professionnel à Bordeaux"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -273,6 +388,15 @@
          (max-width: 575px) 425px"
               alt="Photographe coprorate Bordeaux : photo représentant les salariés lors d'une réunion"
               title="Image fixée d'une réunion par votre photographe professionel"
+              itemprop="image"
+            />
+            <meta
+              itemprop="name"
+              content="Image fixée d'une réunion par votre photographe professionel"
+            />
+            <meta
+              itemprop="description"
+              content="Photographe coprorate Bordeaux : photo représentant les salariés lors d'une réunion"
             />
             <img
               data-gallery-tag="Mariages"
@@ -293,6 +417,15 @@
          (max-width: 575px) 425px"
               alt="photographe mariage Bordeaux : les mains des mariés"
               title="Instant capturé des mains des mariés par votre photographe mariage Bordeaux"
+              itemprop="image"
+            />
+            <meta
+              itemprop="name"
+              content="Instant capturé des mains des mariés par votre photographe mariage Bordeaux"
+            />
+            <meta
+              itemprop="description"
+              content="photographe mariage Bordeaux : les mains des mariés"
             />
             <img
               data-gallery-tag="Portrait"
@@ -313,6 +446,12 @@
          (max-width: 575px) 425px"
               alt="portrait photo d'Ade Tunji, par votre photographe de Bordeaux"
               title="Portrait rapproché d'Ade"
+              itemprop="image"
+            />
+            <meta itemprop="name" content="Portrait rapproché d'Ade" />
+            <meta
+              itemprop="description"
+              content="portrait photo d'Ade Tunji, par votre photographe de Bordeaux"
             />
             <img
               data-gallery-tag="Mariages"
@@ -332,7 +471,16 @@
          (min-width: 576px) and (max-width: 767px) 254px,
          (max-width: 575px) 425px"
               alt="photo des mariés sur la plages prise par votre photographe de mariage"
-              title="Photographe mariage : instant capturé sur la plage "
+              title="Photographe mariage : instant capturé sur la plage"
+              itemprop="image"
+            />
+            <meta
+              itemprop="name"
+              content="Photographe mariage : instant capturé sur la plage"
+            />
+            <meta
+              itemprop="description"
+              content="photo des mariés sur la plages prise par votre photographe de mariage"
             />
             <img
               data-gallery-tag="Portrait"
@@ -353,6 +501,15 @@
          (max-width: 575px) 425px"
               alt="Photographe Bordeaux : portrait photo de Nino en extérieur"
               title="Portrait en extérieur à Bordeaux de Nino"
+              itemprop="image"
+            />
+            <meta
+              itemprop="name"
+              content="Portrait en extérieur à Bordeaux de Nino"
+            />
+            <meta
+              itemprop="description"
+              content="Photographe Bordeaux : portrait photo de Nino en extérieur"
             />
             <img
               data-gallery-tag="Concert"
@@ -373,6 +530,15 @@
          (max-width: 575px) 425px"
               alt="Photo réalisée par votre photographe de Bordeaux du chanteur lors d'un concert"
               title="Point de vue du chanteur par votre photographe de Bordeaux"
+              itemprop="image"
+            />
+            <meta
+              itemprop="name"
+              content="Point de vue du chanteur par votre photographe de Bordeaux"
+            />
+            <meta
+              itemprop="description"
+              content="Photo réalisée par votre photographe de Bordeaux du chanteur lors d'un concert"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -392,84 +558,136 @@
             (min-width: 576px) and (max-width: 767px) 254px,
             (max-width: 575px) 425px"
               alt="photographe corporate Bordeaux : vue d'une salarié derrière son PC"
-              title="Photographe corporate de Bordeaux : Capture photographique d'une salarié "
+              title="Photographe corporate de Bordeaux : Capture photographique d'une salarié"
+              itemprop="image"
+            />
+            <meta
+              itemprop="name"
+              content="Photographe corporate de Bordeaux : Capture photographique d'une salarié"
+            />
+            <meta
+              itemprop="description"
+              content="photographe corporate Bordeaux : vue d'une salarié derrière son PC"
             />
           </div>
         </div>
-        <div class="quote">
-          <figure>
-            <blockquote>
-              <p class="quote__text">
-                Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
-                ou qu’un fait est traduit en photo, il cesse d’être un fait pour
-                devenir une opinion. L’inexactitude n’existe pas en
-                photographie. Toutes les photos sont exactes. Aucune d’elles
-                n’est la vérité.
-              </p>
-            </blockquote>
-            <figcaption class="quote__author">- Richard Avedon</figcaption>
-          </figure>
-        </div>
       </section>
-      <section id="services">
+      <div class="quote" itemscope itemtype="https://schema.org/Quotation">
+        <figure>
+          <blockquote>
+            <p class="quote__text" itemprop="text">
+              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+              qu’un fait est traduit en photo, il cesse d’être un fait pour
+              devenir une opinion. L’inexactitude n’existe pas en photographie.
+              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+            </p>
+          </blockquote>
+          <figcaption class="quote__author" itemprop="author">
+            - Richard Avedon
+          </figcaption>
+        </figure>
+      </div>
+      <section
+        id="services"
+        itemscope
+        itemtype="https://schema.org/PhotographAction"
+      >
         <h2 class="title">Mes services de photographes à Bordeaux</h2>
         <div class="container">
-          <div class="service">
+          <div class="service" itemscope itemtype="https://schema.org/Service">
             <div class="service__description">
-              <h3>Shooting photo</h3>
-              <p>
+              <h3 itemprop="provider">Shooting photo</h3>
+              <p itemprop="description">
                 Pour capturer vos moments les plus précieux et garder un
                 souvenir impérissable. Je me déplace dans la région de Bordeaux
                 pour réaliser vos photos
               </p>
             </div>
-            <div class="service__price">
-              <h4 class="price">350€/demi journée</h4>
+            <div
+              class="service__price"
+              itemprop="offers"
+              itemscope
+              itemtype="https://schema.org/Offer"
+            >
+              <h4
+                class="price"
+                itemprop="priceSpecification"
+                itemscope
+                itemtype="https://schema.org/UnitPriceSpecification"
+              >
+                <span itemprop="price">350€</span>/demi journée
+              </h4>
               <span>Matériel, déplacement inclus</span>
             </div>
           </div>
-          <div class="service">
+          <div class="service" itemscope itemtype="https://schema.org/Service">
             <div class="service__description">
-              <h3>Retouches</h3>
-              <p>
+              <h3 itemprop="provider">Retouches</h3>
+              <p itemprop="description">
                 Vous souhaitez retoucher vos photos pour un résultat
                 professionnel ? Bénéficier d’un rendu optimal pour vos
                 publications
               </p>
             </div>
-            <div class="service__price">
-              <h4 class="price">50€/photo</h4>
+            <div
+              class="service__price"
+              itemprop="offers"
+              itemscope
+              itemtype="https://schema.org/Offer"
+            >
+              <h4
+                class="price"
+                itemprop="priceSpecification"
+                itemscope
+                itemtype="https://schema.org/UnitPriceSpecification"
+              >
+                <span itemprop="price">50€</span>/photo
+              </h4>
               <span>2 AR par photo</span>
             </div>
           </div>
-          <div class="service">
+          <div class="service" itemscope itemtype="https://schema.org/Service">
             <div class="service__description">
-              <h3>Album photos</h3>
-              <p>
+              <h3 itemprop="provider">Album photos</h3>
+              <p itemprop="description">
                 Partagez avec vos proches et vos clients les photos des moments
                 partagés ensemble à travers un album photo personnalisé
               </p>
             </div>
-            <div class="service__price">
-              <h4 class="price">400€ album A4</h4>
+            <div
+              class="service__price"
+              itemprop="offers"
+              itemscope
+              itemtype="https://schema.org/Offer"
+            >
+              <h4
+                class="price"
+                itemprop="priceSpecification"
+                itemscope
+                itemtype="https://schema.org/UnitPriceSpecification"
+              >
+                <span itemprop="price">400€</span> album A4
+              </h4>
               <span>30 pages recto/verso</span>
             </div>
           </div>
         </div>
       </section>
-      <div class="quote">
+      <div class="quote" itemscope itemtype="https://schema.org/Quotation">
         <figure>
           <blockquote>
-            <p class="quote__text">
+            <p class="quote__text" itemprop="text">
               De manière inconsciente, je crois, je guette un regard, une
               expression, des traits ou une nostalgie capable de résumer ou plus
               exactement de révéler une vie
             </p>
           </blockquote>
-          <figcaption class="quote__author">- Richard Avedon</figcaption>
+          <figcaption class="quote__author" itemprop="author">
+            - Richard Avedon
+          </figcaption>
         </figure>
       </div>
-      <section id="contact">
+      <section id="contact" itemscope itemtype="https://schema.org/ContactPage">
         <div class="container">
           <div class="form-container">
             <h2>Besoin d'un photographe ? Contactez-moi !</h2>
@@ -477,7 +695,13 @@
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
             </p>
-            <form action="#" method="post">
+            <form
+              action="#"
+              method="post"
+              itemprop="mainEntity"
+              itemscope
+              itemtype="https://schema.org/ContactPoint"
+            >
               <label for="nom">Nom</label>
               <input type="text" name="nom" id="nom" aria-label="Nom" />
 
@@ -503,6 +727,7 @@
                 value="Envoyer"
                 aria-label="Envoyer le formulaire"
               />
+              <meta itemprop="email" content="ninacarducci@gmail.com" />
             </form>
           </div>
           <div class="picture right">
@@ -518,6 +743,7 @@
               title="L'outil de travail de votre photographe à Bordeaux"
               width="27.22vw"
               height="auto"
+              itemprop="image"
             />
           </div>
         </div>
