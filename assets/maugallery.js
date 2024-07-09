@@ -111,6 +111,11 @@
         <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
           <meta itemprop="name" content="Nina Carducci" />
         </span>
+        <span itemprop="creditText">
+        <meta itemprop="name" content="Nina Carducci"/></span>
+        <span itemprop="copyrightNotice"><meta itemprop="name" content="© Nina Carducci"/></span>
+        <span itemprop="license"><meta itemprop="url" content="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr"/></span>
+
       `);
     },
     moveItemInRowWrapper(element) {
