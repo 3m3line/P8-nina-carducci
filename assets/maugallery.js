@@ -115,6 +115,7 @@
         <meta itemprop="creditText" content="Nina Carducci"/></span>
         <span itemprop="copyrightNotice"><meta itemprop="copyrightNotice" content="© Nina Carducci"/></span>
         <span itemprop="license"><meta itemprop="license" content="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr"/></span>
+        <span itemprop="acquireLicensePage"><meta itemprop="acquireLicensePage" content="./index.html#contact"></span>
 
       `);
     },
