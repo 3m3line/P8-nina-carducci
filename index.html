@@ -19,11 +19,6 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-    /></noscript>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -790,20 +785,5 @@
     ></script>
     <script src="./assets/maugallery.js?v=1"></script>
     <script src="./assets/scripts.js?v=1"></script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("/serviceWorker.js")
-          .then((registration) => {
-            console.log("Service Worker enregistré avec succès:", registration);
-          })
-          .catch((error) => {
-            console.log(
-              "Erreur lors de l'enregistrement du Service Worker:",
-              error
-            );
-          });
-      }
-    </script>
   </body>
 </html>
